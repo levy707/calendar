@@ -1,4 +1,9 @@
-# calendar
+# Calendar
+
+## Supported node version
+```
+v18.20.0
+```
 
 ## Project setup
 ```
