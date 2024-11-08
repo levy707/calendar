@@ -16,34 +16,41 @@
 </template>
 
 <script>
-import RangePicker from '@/components/FormsElements/RangePicker.vue';
+import RangePicker from '@/components/atoms/RangePicker/RangePicker.vue';
 
 export default {
     name: 'BookingForm',
+
     components: { RangePicker },
+
     props: {
         price: {
             type: Number,
             default: 0,
         },
+
         rate: {
             type: Number,
             default: 0,
         },
+
         votes: {
             type: Number,
             default: 0,
         },
+
         blockedDates: {
             type: Array,
             default: () => [],
         },
     },
+
     data() {
         return {
             maxVoteNumber: 5,
         };
     },
+
     methods: {
         getVoteClass(currentValue) {
             if (!this.rate || !currentValue) {

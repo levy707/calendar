@@ -59,6 +59,7 @@ module.exports = {
         indent: ['error', 4, { SwitchCase: 1 }],
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
+        'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
         'import/extensions': ['error', 'ignorePackages', { '': 'never' }],
         camelcase: ['off'],
         'vue/multiline-html-element-content-newline': ['error'],

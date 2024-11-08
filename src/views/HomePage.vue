@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import BookingForm from '@/components/Forms/BookingForm.vue';
+import BookingForm from '@/components/atoms/BookingForm/BookingForm.vue';
 
 export default {
     name: 'HomePage',
@@ -21,7 +21,7 @@ export default {
                 price: 293,
                 rate: 4.59,
                 votes: 123,
-                blockedDates: ['2024.05.01', '2024.05.03', '2024.05.10', '2020.12.29', 'test', 0],
+                blockedDates: ['2024.11.15', '2024.11.17', '2024.11.21', '2020.12.29', 'test', 0],
             },
         };
     },
